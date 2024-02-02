@@ -1,0 +1,142 @@
+.main-banner-content{
+    top:15%;
+    left:5%;
+      position: absolute;
+  top: 1;
+  left: 1;
+  padding: 2rem; 
+  color: #fff;
+    
+}
+/* MainBanner.css */
+
+
+.main-banner-content h4 {
+  font-weight: 600; /* Increase font weight for emphasis */
+  line-height: 28px;
+  color: #bf4800;
+  margin: 0 0 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 1.8rem; /* Slightly increase font size */
+}
+
+.main-banner-content h5 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500; /* Adjust font weight */
+  color: #333; /* Darken text color */
+}
+
+.main-banner-content p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #555; /* Adjust text color */
+}
+
+.buy-now-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600; /* Increase font weight */
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.buy-now-link:hover {
+  background-color: #0056b3;
+}
+
+.home-wrapper-1 {
+  padding-top: 1rem; /* Adjust as needed */
+}
+
+.container--xxl {
+  max-width: 200rem; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+}
+
+.main-banner {
+  position: relative;
+  padding: 1.4rem;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem; /* Adjust as needed */
+}
+
+
+
+/* HomeBanner.css */
+.home-banner-container {
+display: flex;
+flex-wrap: wrap;
+justify-content:space-between;
+align-items: center;
+
+}
+
+.small-banner {
+  position: relative;
+  padding-left: 3rem;
+   padding-right: 1rem;
+  padding-bottom:2.4rem;
+    padding-top:1.5rem;
+  width: 50%;
+}
+
+.small-banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem; /* Adjust as needed */
+}
+
+.small-banner-content {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  padding: 2rem;
+  color: #fff;
+}
+
+.small-banner-content h4 {
+   font-weight: 600; /* Increase font weight for emphasis */
+  line-height: 28px;
+  color: #bf4800;
+  margin: 0 0 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+    margin-left:10px;
+  font-size: 1.3rem; /* Slightly increase font size */
+}
+
+.small-banner-content h5 {
+font-size: 1.3rem;
+  margin-bottom: 1rem;
+  margin-left:10px;
+  font-weight: 500; /* Adjust font weight */
+  color: #333; /* Darken text color */
+}
+
+.small-banner-content p {
+ font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #555; 
+    margin-left:10px;
+}
+
+.home-wrapper-1{
+padding-top:180px;
+}

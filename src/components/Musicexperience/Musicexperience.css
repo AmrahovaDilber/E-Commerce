@@ -1,0 +1,65 @@
+.music {
+  background: var(--Button, #000);
+  width: 100%;
+  color: white;
+}
+
+.musiccontainer {
+  display: flex;
+  padding: 70px 125px;
+}
+
+.right img {
+  width: 600px;
+  height: 350px;
+  flex-shrink: 0;
+  margin-left:200px;
+}
+
+.buttons {
+  display: flex;
+  gap: 23px;
+  margin-bottom:40px;
+}
+.buttons button {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.buttons button span{
+    color: var(--Text2, #000);
+font-family: Poppins,sans-serif;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px; 
+
+}
+
+.left h1 {
+  color: var(--Text, #fafafa);
+
+  /* Heading/48PX SemiBold */
+  font-family: Inter, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 125% */
+  letter-spacing: 1.92px;
+  margin-bottom:32px;
+  width: 443px;
+}
+
+.buy{
+    border-radius: 4px;
+background: var(--Button1, #0F6);
+border:none;
+display: inline-flex;
+padding: 16px 48px;
+justify-content: center;
+align-items: center;
+font-size:20px;
+gap: 10px;
+cursor:pointer;
+}

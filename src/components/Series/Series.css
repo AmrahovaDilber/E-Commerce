@@ -1,0 +1,56 @@
+.series {
+  background: var(--Text2, #000);
+  color: white;
+  width: 100%;
+}
+
+.seriescontainer {
+  display: flex;
+  gap: 500px;
+  padding: 60px 125px;
+}
+.iphone {
+  display: flex;
+  align-items: center;
+  margin-bottom:20px;
+}
+.iphone img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.leftside h2 {
+  color: var(--Text, #fafafa);
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px;
+  width:290px;
+  letter-spacing: 1.92px;
+  margin-bottom:25px;
+}
+/* Add these styles for the button */
+.shopNowButton {
+  background-color: #3498db; /* Add a background color */
+  color: #fff; /* Set text color to white */
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  padding: 12px 35px; /* Add some padding for better appearance */
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Add some border-radius for rounded corners */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.shopNowButton:hover {
+  background-color: #2980b9; /* Change background color on hover */
+}
+
+.rightside img {
+  width: 600px;
+  height: 350px;
+}

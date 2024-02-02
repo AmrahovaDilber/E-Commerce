@@ -1,0 +1,41 @@
+.top_banner {
+  padding-left:100px;
+  padding-right:100px;
+  padding-bottom:80px;
+  width: 100%;
+  background: linear-gradient(to right, #58afe9, #aab8c2);
+}
+
+.top_banner .container {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top_banner .container .detail {
+  margin-top: 8%;
+  margin-left: 30px;
+}
+
+.top_banner .container .detail h2 {
+ font-size: 48px; /* Increased font size */
+  color: #ffffff; /* White text color */
+  margin-right: 50%;
+  margin-bottom: 50px; /* Reduced bottom margin */
+  font-family: 'Montserrat', sans-serif; /* Add your preferred font-family */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow */
+}
+
+.top_banner .container .detail .link {
+  padding: 12px 35px;
+  border-radius: 5px;
+  color: white;
+  background: black;
+  font-size: 23px;
+  text-decoration:none;
+  transition: background 0.3s ease-in-out; /* Add smooth transition for the hover effect */
+}
+
+.top_banner .container .detail .link:hover {
+  background: #333; /* Darker background color on hover */
+}

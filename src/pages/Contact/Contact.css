@@ -1,0 +1,124 @@
+.contact-container {
+  display: flex;
+  padding: 70px 135px;
+  gap: 50px;
+}
+
+.contactnav{
+    width:100%;
+    background:#ecf2f7;
+}
+.callto {
+  display: flex;
+  align-items: center;
+
+}
+.calicon{
+    align-items: center;
+    display: flex;
+}
+.contactus {
+  padding-left: 150px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 34px;
+  color:black;
+}
+
+.contactic{
+  background: var(--Button2, #db4444); /* Use the provided color variable */
+  border-radius: 50%; /* Optional: add border-radius for a circular background */
+padding:5px 7px;
+color:white;
+font-size:15px;
+}
+
+.contact-container .call {
+  margin-top: 80px;
+  padding: 20px 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.writeto {
+  display: flex;
+  align-items: center;
+}
+.write {
+  margin-top: 20px;
+}
+
+.contactleft p {
+  color: #000;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+/* Add this to your CSS */
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contactleft {
+  /* Add styling for the left side as needed */
+  width: 50%;
+  padding: 40px 35px;
+  border-radius: 4px;
+  background: var(--Primary, #fff);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.contactright {
+  padding: 40px 32px;
+  width: 100%;
+  border-radius: 4px;
+  background: var(--Primary, #fff);
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.top {
+  display: flex;
+  gap: 16px; /* Adjust the gap between inputs as needed */
+}
+
+.top input {
+  /* Add common styling for text inputs inside .top */
+  width: 100%;
+  padding: 14px;
+  border: 1px #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.righttext {
+  margin-top: 32px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 160px;
+  border: 1px #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+float:left;
+}
+
+.contactright button {
+  color: var(--Text, #fafafa);
+  border: none;
+  padding: 15px 40px;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  float: right;
+  margin-top: 32px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  background: var(--Button2, #db4444);
+}

@@ -1,0 +1,96 @@
+.part1 {
+  width: 100%;
+  background: var(--Button, #000);
+}
+.part1 h2 {
+  color: var(--Text, #fafafa);
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-left: 75px;
+  padding: 12px 0px;
+}
+
+.shopnow {
+  margin-left: 8px;
+  color: var(--Text, #fafafa);
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration-line: underline;
+}
+
+.part2 {
+  display: flex;
+  justify-content: space-around;
+  padding: 35px 0px;
+  align-items: center;
+  /* background:#ecf2f7; */
+}
+
+.part2mid .page {
+  color: var(--Text2, #000);
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+  margin-left: 48px;
+  transition: color 0.2s ease-in-out, background-color 0.3s ease-in-out; /* Adding transitions for color and background-color */
+}
+
+.part2mid .page:hover {
+  color: var(--HoverColor, #007bff);
+  background-color: var(--HoverBackgroundColor, #f0f0f0);
+}
+
+.part2end {
+  display: flex;
+  align-items: center;
+}
+
+.navicons {
+  gap: 16px;
+  margin-left: 24px;
+  cursor: pointer;
+  color: #0989ff;
+  font-size: 23px;
+}
+
+.navicon {
+  margin-left: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.input-container {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input {
+  padding: 10px 50px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow */
+}
+
+.search-icon {
+  position: absolute;
+  right: 13px;
+  top: 12px;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+  color: #333;
+}
