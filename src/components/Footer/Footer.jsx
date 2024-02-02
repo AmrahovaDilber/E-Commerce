@@ -49,26 +49,25 @@ export default function Footer() {
             <img src={img2} style={{ width: 104, height: 100 }} alt="img"></img>
             <img src={img3} style={{ width: 104, height: 100 }} alt="img"></img>
           </div>
-
-          <div className="icon">
-            <li>
+          <div className="icon-container">
+            <li className="icon-item">
               <a href="https://www.facebook.com">
-                <FaFacebook style={{ color: "white" }} />
+                <FaFacebook className="facebook-icon" />
               </a>
             </li>
-            <li>
+            <li className="icon-item">
               <a href="https://www.instagram.com">
-                <FaInstagram style={{ color: "white" }} />
+                <FaInstagram className="instagram-icon" />
               </a>
             </li>
-            <li>
+            <li className="icon-item">
               <a href="https://twitter.com">
-                <FaTwitter style={{ color: "white" }} />
+                <FaTwitter className="twitter-icon" />
               </a>
             </li>
-            <li>
+            <li className="icon-item">
               <a href="https://www.youtube.com">
-                <FaYoutube style={{ color: "white" }} />
+                <FaYoutube className="youtube-icon" />
               </a>
             </li>
           </div>

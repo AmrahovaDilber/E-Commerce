@@ -79,3 +79,43 @@ margin-bottom:10px;
     border-radius:5px;
     font-size:16px;
 }
+
+
+
+
+
+
+
+.icon-container {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.icon-item {
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon-item:hover {
+  transform: scale(1.2); /* Increase size on hover */
+}
+
+.facebook-icon {
+  color: #1877f2;
+  font-size: 24px;
+}
+
+.instagram-icon {
+  color: #c13584;
+  font-size: 24px;
+}
+
+.twitter-icon {
+  color: #1da1f2;
+  font-size: 24px;
+}
+
+.youtube-icon {
+  color:#db4444;
+  font-size: 24px;
+}
