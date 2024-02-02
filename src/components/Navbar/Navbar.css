@@ -39,7 +39,7 @@
   line-height: 24px;
   text-decoration: none;
   margin-left: 48px;
-  transition: color 0.2s ease-in-out, background-color 0.3s ease-in-out; /* Adding transitions for color and background-color */
+  transition: color 0.2s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .part2mid .page:hover {
@@ -79,7 +79,7 @@
 input {
   padding: 10px 50px;
 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .search-icon {

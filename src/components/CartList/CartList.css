@@ -1,4 +1,4 @@
-/* CartList.css */
+
 
 .cart-list-container {
   display: flex;
@@ -9,7 +9,7 @@
   margin:auto;
   max-height: 480px;
   margin-top:50px;
-  overflow-y: auto; /* Add scrollbar when content overflows */
+  overflow-y: auto; 
 }
 
 .cart-item {

@@ -14,7 +14,7 @@ export default function Series() {
           </div>
           <h2>Up to 10% off Voucher</h2>
           <Link to="products">
-            {" "}
+    
             <button className="shopNowButton">Shop Now</button>
           </Link>
         </div>

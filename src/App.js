@@ -4,7 +4,7 @@ import Products from '../src/pages/Products/Product';
 import Contact from '../src/pages/Contact/Contact';
 import TapToTopButton from './components/TapToTop/TapToTop';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
+
 
 function App() {
   return (

@@ -26,8 +26,8 @@
 }
 
 .contactic{
-  background: var(--Button2, #db4444); /* Use the provided color variable */
-  border-radius: 50%; /* Optional: add border-radius for a circular background */
+  background: var(--Button2, #db4444); 
+  border-radius: 50%; 
 padding:5px 7px;
 color:white;
 font-size:15px;
@@ -59,7 +59,7 @@ font-size:15px;
   margin-bottom: 15px;
 }
 
-/* Add this to your CSS */
+
 
 .contact-container {
   display: flex;
@@ -68,7 +68,6 @@ font-size:15px;
 }
 
 .contactleft {
-  /* Add styling for the left side as needed */
   width: 50%;
   padding: 40px 35px;
   border-radius: 4px;
@@ -86,11 +85,10 @@ font-size:15px;
 
 .top {
   display: flex;
-  gap: 16px; /* Adjust the gap between inputs as needed */
+  gap: 16px; 
 }
 
 .top input {
-  /* Add common styling for text inputs inside .top */
   width: 100%;
   padding: 14px;
   border: 1px #ccc;

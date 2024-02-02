@@ -1,6 +1,6 @@
 import React from "react";
 import "../Products/Products.css";
-import Navbar from "../Navbar/Navbar";
+
 
 const Products = ({ result }) => {
   return (
