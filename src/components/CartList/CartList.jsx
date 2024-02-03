@@ -9,10 +9,10 @@ export default function CartList({ cart,handleRemoveItem }) {
     setCART(cart);
   }, [cart]);
 
-  const handleClearCart = () => {
-    setCART([]);
+  // const handleClearCart = () => {
+  //   setCART([]);
     
-  };
+  // };
   return (
     <>
       <div className="cart-list-container">
@@ -82,9 +82,9 @@ export default function CartList({ cart,handleRemoveItem }) {
               0
             )}
           </span>
-          <div className="clear-cart" style={{marginBottom:"15px"}}>
+          {/* <div className="clear-cart" style={{marginBottom:"15px"}}>
             <button onClick={handleClearCart}>Clear Cart</button>
-          </div>
+          </div> */}
         </h3>
       </div>
 

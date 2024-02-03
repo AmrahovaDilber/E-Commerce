@@ -18,34 +18,33 @@ import img19 from "../src/images/tablet3.webp";
 import img20 from "../src/images/asuscomputer2.jpg";
 import img21 from "../src/images/sonycomputer.jpg";
 import img22 from "../src/images/camera2.jpg";
-import img23 from '../src/images/sonycomputer2.jpg'
-import img24 from '../src/images/blackwatch2.jpg';
-import img25 from '../src/images/blackwatch3.jpg';
-import img26 from '../src/images/blueheadphone.jpg';
-import img27 from '../src/images/blueheadphone2.jpg';
-import img28 from '../src/images/redwatch.jpg';
-import img29 from '../src/images/whitewatch.jpg';
-import img30 from '../src/images/whiteheadphone.jpg';
-import img31 from '../src/images/samsungcomputer.jpg';
-import img32 from '../src/images/greenheadphone2.jpg'
-import img33 from '../src/images/greenwatch.jpg';
-import img34 from '../src/images/bluewatch.jpg';
-import img35 from '../src/images/redheadphone.webp';
-import img36 from '../src/images/redwatch2.jpg';
+import img23 from "../src/images/sonycomputer2.jpg";
+import img24 from "../src/images/blackwatch2.jpg";
+import img25 from "../src/images/blackwatch3.jpg";
+import img26 from "../src/images/blueheadphone.jpg";
+import img27 from "../src/images/blueheadphone2.jpg";
+import img28 from "../src/images/redwatch.jpg";
+import img29 from "../src/images/whitewatch.jpg";
+import img30 from "../src/images/whiteheadphone.jpg";
+import img31 from "../src/images/samsungcomputer.jpg";
+import img32 from "../src/images/greenheadphone2.jpg";
+import img33 from "../src/images/greenwatch.jpg";
+import img34 from "../src/images/bluewatch.jpg";
+import img35 from "../src/images/redheadphone.webp";
+import img36 from "../src/images/redwatch2.jpg";
 import img37 from "../src/images/blueheadphone3.jpg";
 import img38 from "../src/images/blueheadphone4.jpg";
 import img39 from "../src/images/greenwatch2.jpg";
 import img40 from "../src/images/redheadphone2.jpg";
-import img41 from '../src/images/bmwwatch.jpg';
-import img42 from "../src/images/bmwatch2.jpg"
+import img41 from "../src/images/bmwwatch.jpg";
+import img42 from "../src/images/bmwatch2.jpg";
 import img43 from "../src/images/bmwwatch3.jpg";
 import img44 from "../src/images/bmwwatch5.jpg";
-import img45 from '../src/images/porschewatch.jpg'
+import img45 from "../src/images/porschewatch.jpg";
 import img46 from "../src/images/porschewatch3.png";
-import img47 from '../src/images/asuscomputer3.jpg';
+import img47 from "../src/images/asuscomputer3.jpg";
 import img48 from "../src/images/samsungcomputer2.jpg";
 import { AiFillStar } from "react-icons/ai";
-
 
 const Productdata = [
   {
@@ -346,7 +345,7 @@ const Productdata = [
     title: "BERIBES",
     model: "202A",
     price: "89.99",
-    category: "Smart Watch",
+    category: "Headphone",
     image: img30,
     color: "white",
     star: <AiFillStar className="rating-star" />,

@@ -27,10 +27,10 @@ export default function Product() {
     setCart(updatedCart);
     setCount(count - 1);
   };
-  const handleClearCart = () => {
-    setCart([]);
-    setCount(0);
-  };
+  // const handleClearCart = () => {
+  //   setCart([]);
+  //   setCount(0);
+  // };
 
   // ----------- Input Filter -----------
   const [query, setQuery] = useState("");
@@ -97,7 +97,7 @@ export default function Product() {
           ></Navbar>
           <CartList
             handleRemoveItem={handleRemoveItem}
-            handleClearCart={handleClearCart}
+            // handleClearCart={handleClearCart}
             cart={cart}
           ></CartList>
         </>

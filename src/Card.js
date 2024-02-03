@@ -1,7 +1,3 @@
-// import { BsFillBagFill } from "react-icons/bs";
-// import { IoEyeOutline } from "react-icons/io5";
-// import { FaRegHeart } from "react-icons/fa";
-
 const Card = ({ image, title, category, star, reviews, price, addToCart }) => {
   return (
     <>
@@ -32,9 +28,6 @@ const Card = ({ image, title, category, star, reviews, price, addToCart }) => {
               >
                 Add To Cart
               </button>
-              {/* <BsFillBagFill className="bag-icon" /> */}
-              {/* <IoEyeOutline className="eye-icon" />
-              <FaRegHeart className="heart-icon" /> */}
             </div>
           </section>
         </div>
