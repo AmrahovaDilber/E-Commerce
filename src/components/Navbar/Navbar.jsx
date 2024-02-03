@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../images/logo.png";
 import { FaSearch, FaHeart } from "react-icons/fa";
 import { IoBagCheck } from "react-icons/io5";
@@ -14,16 +14,21 @@ function Navbar({
   count,
   handleShow,
 }) {
+  const location = useLocation();
+  const isProductsPage = location.pathname === "/products";
+
   return (
     <div className={className}>
       <div className="part1">
-        <h2>
-          "Tech Extravaganza! Save 50% on All Gadgets with Free Express
-          Delivery!"
-          <Link to="/products" className="shopnow">
-            ShopNow
-          </Link>
-        </h2>
+        (
+          <h2>
+            "Tech Extravaganza! Save 50% on All Gadgets with Free Express
+            Delivery!"
+            <Link to="/products" className="shopnow">
+              ShopNow
+            </Link>
+          </h2>
+        )
       </div>
       <div className="part2">
         <img src={logo} alt="logo"></img>
@@ -54,17 +59,18 @@ function Navbar({
               <FaSearch className="search-icon" />
             </div>
           </div>
-          <div className="navicons">
-            {/* <FaHeart className="navicon" /> */}
-            <span
-              onClick={() => {
-                handleShow(true);
-              }}
-            >
-              <IoBagCheck className="navicon" />
-              {count}
-            </span>
-          </div>
+          {isProductsPage ? (
+            <div className="navicons">
+              <span
+                onClick={() => {
+                  handleShow(true);
+                }}
+              >
+                <IoBagCheck className="navicon" />
+                {count}
+              </span>
+            </div>
+          ) : null}
         </div>
       </div>
       <hr />

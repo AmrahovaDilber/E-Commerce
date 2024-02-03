@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function Music() {
   const calculateTimeLeft = () => {
     const now = new Date();
-const targetDate = new Date("2024-12-31T23:59:59");
+    const targetDate = new Date("2024-12-31T23:59:59");
     const difference = targetDate - now;
 
     if (difference <= 0) {
@@ -20,7 +20,6 @@ const targetDate = new Date("2024-12-31T23:59:59");
 
     return { hours, minutes, seconds };
   };
-
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   useEffect(() => {
@@ -39,7 +38,6 @@ const targetDate = new Date("2024-12-31T23:59:59");
         <div className="left">
           <h1>Enhance Your Music Experience</h1>
           <div className="buttons">
-       
             <button>
               <span>{timeLeft.hours}</span>
               <br /> Hours
@@ -54,7 +52,6 @@ const targetDate = new Date("2024-12-31T23:59:59");
             </button>
           </div>
           <Link to="/products">
-            {" "}
             <button className="buy">Buy Now!</button>
           </Link>
         </div>
