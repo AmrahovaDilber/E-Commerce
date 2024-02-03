@@ -1,6 +1,6 @@
 import React from "react";
 import topproduct from "../../topproduct";
-import "../../components/TopProduct/TopProduct.css"
+import "../../components/TopProduct/TopProduct.css";
 
 export default function TopProduct() {
   return (

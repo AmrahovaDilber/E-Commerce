@@ -1,12 +1,11 @@
 import React from "react";
 import "../../Products/Products.css";
 import "../Filter/Filter.css";
-import Input from '../../../Input.js'
+import Input from "../../../Input.js";
 function Category({ handleChange }) {
   return (
-    <div >
-
-     <h2 className="sidebar-title">Category</h2>
+    <div>
+      <h2 className="sidebar-title">Category</h2>
       <div>
         <label className="sidebar-label-container">
           <input onChange={handleChange} type="radio" value="" name="test" />

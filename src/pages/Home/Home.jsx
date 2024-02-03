@@ -29,7 +29,6 @@ export default function Home() {
       <Category></Category>
       <TopProduct></TopProduct>
       <Music></Music>
-
       <Section></Section>
       <Footer></Footer>
     </div>

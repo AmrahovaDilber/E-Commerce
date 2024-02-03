@@ -21,7 +21,7 @@ const Card = ({ image, title, category, star, reviews, price, addToCart }) => {
           </section>
           <section className="card-price">
             <div className="price">
-              <span>{price}</span>
+              <span>{price}$</span>
             </div>
             <div className="bag">
               <button

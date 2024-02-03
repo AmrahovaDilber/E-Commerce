@@ -21,7 +21,6 @@ export default function Product() {
     setCount(count + 1);
   };
 
-
   //------ Removimg the item at the specified index from the cart---------//
   const handleRemoveItem = (index) => {
     const updatedCart = [...cart.slice(0, index), ...cart.slice(index + 1)];
@@ -30,7 +29,7 @@ export default function Product() {
   };
   const handleClearCart = () => {
     setCart([]);
- setCount(0)
+    setCount(0);
   };
 
   // ----------- Input Filter -----------
@@ -86,16 +85,16 @@ export default function Product() {
   };
   return (
     <div>
-      <Navbar
-        query={query}
-        handleInputChange={handleInputChange}
-        className="navok"
-        count={cart.length}
-        handleShow={handleShow}
-        setCart={setCart}
-      ></Navbar>
       {showCart ? (
         <>
+          <Navbar
+            query={query}
+            handleInputChange={handleInputChange}
+            className="productnav"
+            count={cart.length}
+            handleShow={handleShow}
+            setCart={setCart}
+          ></Navbar>
           <CartList
             handleRemoveItem={handleRemoveItem}
             handleClearCart={handleClearCart}
@@ -104,6 +103,14 @@ export default function Product() {
         </>
       ) : (
         <>
+          <Navbar
+            query={query}
+            handleInputChange={handleInputChange}
+            className="navok"
+            count={cart.length}
+            handleShow={handleShow}
+            setCart={setCart}
+          ></Navbar>
           <Sidebar handleChange={handleChange}></Sidebar>
           <Products addToCart={addToCart} result={result}></Products>
         </>

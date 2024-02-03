@@ -48,43 +48,36 @@
   margin-top: 16px;
 }
 
-.section5 p{
-    color: var(--Text, #FAFAFA);
-font-family: Poppins,sans-serif;
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: 18px; 
-margin-bottom:10px;
+.section5 p {
+  color: var(--Text, #fafafa);
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 10px;
 }
 
-.section5 .icon{
- 
-    display:flex;
-    color:white;
-    font-size:25px;
-    gap:24px;
+.section5 .icon {
+  display: flex;
+  color: white;
+  font-size: 25px;
+  gap: 24px;
 }
-.section5 .icon li{
-    list-style:none;
-    padding:0px 10px;
-    box-shadow:rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
-    cursor:pointer;
-    transition:0.5s
-}
-
-.section5.icon li:hover{
-    background:#0989ff;
-    color:#fff;
-    border-radius:5px;
-    font-size:16px;
+.section5 .icon li {
+  list-style: none;
+  padding: 0px 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
-
-
-
-
-
+.section5.icon li:hover {
+  background: #0989ff;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+}
 
 .icon-container {
   list-style: none;
@@ -116,6 +109,49 @@ margin-bottom:10px;
 }
 
 .youtube-icon {
-  color:#db4444;
+  color: #db4444;
   font-size: 24px;
+}
+@media (max-width: 768px) {
+  .sections {
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px 20px;
+  }
+
+  .section1,
+  .section2,
+  .section3,
+  .section4,
+  .section5 {
+    text-align: center;
+  }
+
+  .email {
+    width: 100%;
+  }
+
+  .images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-container {
+    justify-content: center;
+  }
+
+  .icon-item {
+    padding: 5px;
+  }
+
+  .icon-item:hover {
+    transform: scale(1); /* Reset size on hover for mobile */
+  }
+
+  .icon-item:hover {
+    background: none;
+    color: #fff;
+    border-radius: 0;
+    font-size: 16px;
+  }
 }

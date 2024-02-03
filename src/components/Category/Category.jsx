@@ -35,11 +35,11 @@ export default function Category() {
         </div>
 
         <div className="box1">
-          <img src={img5} alt="img"></img>
+          <img className="watch" src={img5} alt="img"></img>
           <p>Smart Watch</p>
         </div>
         <div className="box1">
-          <img src={img6} alt="img"></img>
+          <img className="tablet"src={img6} alt="img"></img>
           <p>Tablet</p>
         </div>
       </div>

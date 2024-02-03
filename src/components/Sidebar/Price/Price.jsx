@@ -1,10 +1,8 @@
 import React from "react";
 import "../Price/Price.css";
-import Input from "../../../Input.js"
+import Input from "../../../Input.js";
 
 const Price = ({ handleChange }) => {
-
-
   return (
     <>
       <div className="ml">

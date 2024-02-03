@@ -15,13 +15,13 @@
 }
 
 .box1:hover {
-  transform: scale(1.05); /* Scale up on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+  transform: scale(1.05); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .boxes {
   display: flex;
-  gap: 100px; /* Reduced the gap for better visual */
+  gap: 100px; 
   padding: 60px 40px;
 }
 
@@ -46,4 +46,34 @@
 
 .box1:hover img {
   transform: scale(1.2); /* Scale up the image on hover */
+}
+
+/* Add this to the end of your existing CSS */
+
+@media screen and (max-width: 768px) {
+  .boxes {
+    flex-direction: column;
+    gap: 20px; 
+    padding: 30px 20px;
+  }
+
+  .category {
+    padding-left: 20px;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .box1 {
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .watch{
+width:60px;
+  }
+
+  .tablet{
+    width:40px
+  }
 }

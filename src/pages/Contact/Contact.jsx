@@ -76,7 +76,7 @@ export default function Contact() {
               <span className="contactic">
                 <FaPhoneAlt />
               </span>
-              <p style={{ marginTop: "11px",marginLeft:"5px" }}>Call To Us</p>
+              <p style={{ marginTop: "11px", marginLeft: "5px" }}>Call To Us</p>
             </div>
           </div>
           <p>We are available 24/7, 7 days a week.</p>
@@ -89,7 +89,9 @@ export default function Contact() {
                 <CiMail />
               </span>
 
-              <p style={{ marginTop: "11px",marginLeft:"5px"}}>Write To US</p>
+              <p style={{ marginTop: "11px", marginLeft: "5px" }}>
+                Write To US
+              </p>
             </div>
             <p>Fill out our form and we will contact you within 24 hours.</p>
             <p>Emails: customer@exclusive.com</p>

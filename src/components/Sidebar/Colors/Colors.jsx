@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 import "../Colors/Colors.css";
-import Input from '../../../Input.js'
+import Input from "../../../Input.js";
 
 const Colors = ({ handleChange }) => {
   return (
     <>
-      <div >
+      <div>
         <h2 className="sidebar-title color-title">Colors</h2>
         <label className="sidebar-label-container">
           <input onChange={handleChange} type="radio" value="" name="test1" />

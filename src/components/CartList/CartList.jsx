@@ -82,7 +82,7 @@ export default function CartList({ cart,handleRemoveItem }) {
               0
             )}
           </span>
-          <div className="clear-cart">
+          <div className="clear-cart" style={{marginBottom:"15px"}}>
             <button onClick={handleClearCart}>Clear Cart</button>
           </div>
         </h3>
