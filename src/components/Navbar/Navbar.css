@@ -1,20 +1,30 @@
+:root {
+  --Button: #000;
+  --Text: #fafafa;
+  --Text2: #000;
+  --HoverColor: #007bff;
+  --HoverBackgroundColor: #f0f0f0;
+}
+
+/* Part 1 styles */
 .part1 {
   width: 100%;
-  background: var(--Button, #000);
+  background: var(--Button);
 }
+
 .part1 h2 {
-  color: var(--Text, #fafafa);
+  color: var(--Text);
   font-family: Poppins, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   margin-left: 75px;
-  padding: 12px 0px;
+  padding: 12px 0;
 }
 
 .shopnow {
   margin-left: 8px;
-  color: var(--Text, #fafafa);
+  color: var(--Text);
   text-align: center;
   font-family: Poppins, sans-serif;
   font-size: 14px;
@@ -22,16 +32,16 @@
   text-decoration-line: underline;
 }
 
+/* Part 2 styles */
 .part2 {
   display: flex;
   justify-content: space-around;
-  padding: 35px 0px;
+  padding: 35px 0;
   align-items: center;
-  /* background:#ecf2f7; */
 }
 
 .part2mid .page {
-  color: var(--Text2, #000);
+  color: var(--Text2);
   text-align: center;
   font-family: Poppins, sans-serif;
   font-size: 23px;
@@ -43,8 +53,9 @@
 }
 
 .part2mid .page:hover {
-  color: var(--HoverColor, #007bff);
+  color: var(--HoverColor);
   background-color: var(--HoverBackgroundColor, #f0f0f0);
+  position: relative;
 }
 
 .part2end {
@@ -93,6 +104,8 @@ input {
 .search-icon:hover {
   color: #333;
 }
+
+/* Media query styles */
 @media (max-width: 768px) {
   .part2 {
     flex-direction: column;
@@ -121,4 +134,22 @@ input {
     top: 50%;
     transform: translateY(-50%);
   }
+}
+
+
+.part2mid .page::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  height: 2px;
+  background-color: transparent;
+  transition: left 0.3s ease-in-out, right 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.part2mid .page:hover::before {
+  left: 0;
+  right: 0;
+  background-color: var(--HoverColor);
 }
