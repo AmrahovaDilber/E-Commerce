@@ -1,7 +1,6 @@
 import React from "react";
 import "../Series/Series.css";
-import icon from "../../images/iphoneicon.png";
-import iphone from "../../images/iphone.jpeg";
+import tech from "../../images/tech.png";
 import { Link } from "react-router-dom";
 export default function Series() {
   return (
@@ -9,17 +8,17 @@ export default function Series() {
       <div className="seriescontainer">
         <div className="leftside">
           <div className="iphone">
-            <img src={icon} alt="img"></img>
-            <h3>iPhone 14 Series</h3>
+          
+            <h3>Discover Our Latest Collection</h3>
           </div>
-          <h2>Up to 10% off Voucher</h2>
+          <h2>Up to 10% Off on Selected Items!</h2>
+
           <Link to="products">
-    
-            <button className="shopNowButton">Shop Now</button>
+            <button className="shopNowButton">Shop All Products</button>
           </Link>
         </div>
         <div className="rightside">
-          <img src={iphone} alt="iphone"></img>
+          <img src={tech} alt="iphone"></img>
         </div>
       </div>
     </div>

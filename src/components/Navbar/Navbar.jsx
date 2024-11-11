@@ -41,7 +41,7 @@ function Navbar({
           <Link
             to="/products"
             className="page"
-            onClick={() => handleShow(false)}
+      
           >
             Products
           </Link>

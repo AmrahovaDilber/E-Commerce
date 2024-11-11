@@ -1,11 +1,17 @@
 import React from "react";
 import "../Products/Products.css";
+import { useContextMain } from "../../context/AppContext";
+import CartItem from "../CartItem/CartItem";
 
-const Products = ({ result }) => {
+const Products = () => {
+  const { filteredProducts } = useContextMain();
+
   return (
-    <>
-      <section className="card-container">{result}</section>
-    </>
+    <section className="card-container">
+      {filteredProducts.map((item) => (
+        <CartItem key={item.id} item={item} />
+      ))}
+    </section>
   );
 };
 

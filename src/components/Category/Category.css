@@ -1,8 +1,13 @@
 /* Category.css */
+.category-container{
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
 
 .box1 {
   display: flex;
-  width: 160px;
+  
   height: 145px;
   padding: 25px 56px 24px 55px;
   flex-direction: column;
@@ -20,9 +25,10 @@
 }
 
 .boxes {
-  display: flex;
-  gap: 100px; 
-  padding: 60px 40px;
+  display: grid;
+  gap: 40px; 
+  grid-template-columns: repeat(6,1fr);
+
 }
 
 .category {

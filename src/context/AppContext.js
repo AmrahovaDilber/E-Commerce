@@ -7,6 +7,11 @@ export const MainContextProvider = ({ children }) => {
   const [products, setProducts] = useState(Productdata);
   const [carts, setCarts] = useState([]);
   const [favorites, setFavorites] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState(Productdata);
+
+  const [categoryFilter, setCategoryFilter] = useState("all");
+  const [colorFilter, setColorFilter] = useState("");
+  const [priceFilter, setPriceFilter] = useState("all");
 
   useEffect(() => {
     const savedCarts = JSON.parse(localStorage.getItem("carts"));
@@ -26,10 +31,7 @@ export const MainContextProvider = ({ children }) => {
     }
 
     if (favorites.length > 0) {
-      localStorage.setItem(
-        "favorites",
-        JSON.stringify((favorites))
-      );
+      localStorage.setItem("favorites", JSON.stringify(favorites));
     }
   }, [carts, favorites]);
 
@@ -41,7 +43,7 @@ export const MainContextProvider = ({ children }) => {
   };
 
   const handleRemoveFromCart = (id) => {
-    const filteredCarts = carts.filter((cartid) => cartid !== id);
+    const filteredCarts = carts.filter((cartId) => cartId !== id);
     setCarts(filteredCarts);
   };
 
@@ -53,14 +55,11 @@ export const MainContextProvider = ({ children }) => {
     if (!favorites.includes(id)) {
       const newFavorites = [...favorites, id];
       setFavorites(newFavorites);
-      setProducts(newFavorites)
     }
   };
 
   const handleRemoveFromFavorites = (id) => {
-    const filteredFavorites = favorites.filter(
-      (favoriteId) => favoriteId !== id
-    );
+    const filteredFavorites = favorites.filter((favId) => favId !== id);
     setFavorites(filteredFavorites);
   };
 
@@ -68,9 +67,59 @@ export const MainContextProvider = ({ children }) => {
     return products.filter((product) => favorites.includes(product.id));
   };
 
+  const handleCategoryChange = (category) => {
+    setCategoryFilter(category);
+  };
+
+  const handleColorChange = (color) => {
+    setColorFilter(color);
+  };
+
+  const handlePriceChange = (price) => {
+    setPriceFilter(price);
+  };
+
+  useEffect(() => {
+    let filtered = [...products];
+
+    if (categoryFilter !== "all") {
+      filtered = filtered.filter((product) => product.category === categoryFilter);
+    }
+
+    if (colorFilter) {
+      filtered = filtered.filter((product) => product.color === colorFilter);
+    }
+
+    if (priceFilter !== "all") {
+      switch (priceFilter) {
+        case "49.99":
+          filtered = filtered.filter((product) => parseFloat(product.price) <= 50);
+          break;
+        case "89.99":
+          filtered = filtered.filter(
+            (product) => parseFloat(product.price) > 50 && parseFloat(product.price) <= 100
+          );
+          break;
+        case "149.99":
+          filtered = filtered.filter(
+            (product) => parseFloat(product.price) > 100 && parseFloat(product.price) <= 150
+          );
+          break;
+        case "529.99":
+          filtered = filtered.filter((product) => parseFloat(product.price) > 150);
+          break;
+        default:
+          break;
+      }
+    }
+
+    setFilteredProducts(filtered);
+  }, [products, categoryFilter, colorFilter, priceFilter]);
+
   const values = {
     carts,
     products,
+    filteredProducts,
     handleAddToCart,
     handleRemoveFromCart,
     fetchCartProducts,
@@ -78,6 +127,10 @@ export const MainContextProvider = ({ children }) => {
     favorites,
     fetchFavoritesProducts,
     handleRemoveFromFavorites,
+    setProducts,
+    handleCategoryChange,
+    handleColorChange,
+    handlePriceChange,
   };
 
   return <MainContext.Provider value={values}>{children}</MainContext.Provider>;

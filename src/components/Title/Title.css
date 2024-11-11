@@ -1,0 +1,17 @@
+.section-title {
+  font-size: 35px;
+  font-weight: 500;
+  color: #1a1a1a;
+  position: relative;
+  margin: 50px 0px;
+  &::after {
+    content: "";
+    width: 250px;
+    height: 3px;
+    background: linear-gradient(45deg, #4facfe, #00aab3, #0072ff);
+
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+}

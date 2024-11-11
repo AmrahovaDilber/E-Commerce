@@ -1,7 +1,6 @@
 import React from "react";
 import "../Home/Home.css";
 import Homeimage from "../../components/Homeimage/Homeimage";
-import Music from "../../components/Musicexperience/Musicexperience.jsx";
 import Series from "../../components/Series/Series.jsx";
 import Section from "../../components/Section/Section.jsx";
 import Category from "../../components/Category/Category.jsx";
@@ -15,7 +14,7 @@ export default function Home() {
       <Series></Series>
       <Category></Category>
       <TopProduct></TopProduct>
-      <Music></Music>
+
       <Section></Section>
     </div>
   );

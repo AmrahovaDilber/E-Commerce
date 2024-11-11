@@ -9,16 +9,8 @@
   gap: 500px;
   padding: 60px 125px;
 }
-.iphone {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.iphone img {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-}
+
+
 .leftside h2 {
   color: var(--Text, #fafafa);
   font-family: Inter;
@@ -26,7 +18,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 60px;
-  width: 290px;
+  width: 360px;
   letter-spacing: 1.92px;
   margin-bottom: 25px;
 }
@@ -51,8 +43,9 @@
 }
 
 .rightside img {
-  width: 600px;
-  height: 350px;
+  width: 100%;
+  height:100%;
+  border-radius: 50%;
 }
 
 /*---------------------------------- RESPONSIVE DESIGN -----------------------------*/

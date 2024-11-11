@@ -1,17 +1,20 @@
 import React from "react";
-import Filter from "../Sidebar/Filter/Filter";
+
 import Price from "../Sidebar/Price/Price";
 import Colors from "../Sidebar/Colors/Colors";
 import "../Sidebar/Sidebar.css";
+import { useContextMain } from "../../context/AppContext";
+import FilterCategory from "./FilterCategory/FilterCategory";
 
-export default function Sidebar({ handleChange }) {
+export default function Sidebar() {
+  const { handleCategoryChange, handleColorChange, handlePriceChange } =
+    useContextMain();
+
   return (
-    <>
-      <section className="sidebar">
-        <Filter handleChange={handleChange}></Filter>
-        <Price handleChange={handleChange}></Price>
-        <Colors handleChange={handleChange}></Colors>
-      </section>
-    </>
+    <section className="sidebar">
+      <FilterCategory handleCategoryChange={handleCategoryChange} />
+      <Colors handleColorChange={handleColorChange} />
+      <Price handlePriceChange={handlePriceChange} />
+    </section>
   );
 }

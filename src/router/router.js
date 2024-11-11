@@ -1,13 +1,12 @@
 import * as React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home/Home";
-import Products from "../components/Products/Products";
+import Products from "../pages/Products/Product";
 import Contact from "../pages/Contact/Contact";
 import AppLayout from "../layout/AppLayout";
 import { MainContextProvider } from "../context/AppContext";
 import CartPage from "../pages/CartPage/CartPage";
 import WishlistPage from "../pages/WishlistPage/WishlistPage";
-
 
 const routes = [
   {
@@ -26,26 +25,31 @@ const routes = [
   },
   {
     path: "/cart",
-    element: <CartPage/>,
+    element: <CartPage />,
     layout: "App",
   },
   {
     path: "wishlist",
     element: <WishlistPage></WishlistPage>,
-    layout:"App"
-  }
+    layout: "App",
+  },
 ];
 
 const routerMap = (arr) => {
   return arr.map((item) => {
     if (item.layout) {
       if (item.layout === "App") {
-        item.element = <MainContextProvider><AppLayout>{item.element}</AppLayout></MainContextProvider>
+        item.element = (
+          <MainContextProvider>
+            <AppLayout>{item.element}</AppLayout>
+          </MainContextProvider>
+        );
       }
+    } else {
+      item.element = <MainContextProvider>{item.element}</MainContextProvider>;
     }
     return item;
   });
 };
-
 
 export const router = createBrowserRouter(routerMap(routes));
