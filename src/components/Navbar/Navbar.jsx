@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
 import { FaSearch, FaHeart } from "react-icons/fa";
 import { IoBagCheck } from "react-icons/io5";
@@ -15,9 +15,9 @@ function Navbar({
   count,
   handleShow,
 }) {
-  const location = useLocation();
+
   const{carts,favorites}=useContextMain()
-  const isProductsPage = location.pathname === "/products";
+
 
   return (
     <div className={className}>

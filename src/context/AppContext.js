@@ -53,6 +53,7 @@ export const MainContextProvider = ({ children }) => {
     if (!favorites.includes(id)) {
       const newFavorites = [...favorites, id];
       setFavorites(newFavorites);
+      setProducts(newFavorites)
     }
   };
 
