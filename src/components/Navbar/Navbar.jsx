@@ -4,6 +4,7 @@ import logo from "../../images/logo.png";
 import { FaSearch, FaHeart } from "react-icons/fa";
 import { IoBagCheck } from "react-icons/io5";
 import "../Navbar/Navbar.css";
+import { useContextMain } from "../../context/AppContext";
 
 function Navbar({
   className,
@@ -15,19 +16,20 @@ function Navbar({
   handleShow,
 }) {
   const location = useLocation();
+  const{carts,favorites}=useContextMain()
   const isProductsPage = location.pathname === "/products";
 
   return (
     <div className={className}>
       <div className="part1">
         (
-          <h2>
-            "Tech Extravaganza! Save 50% on All Gadgets with Free Express
-            Delivery!"
-            <Link to="/products" className="shopnow">
-              ShopNow
-            </Link>
-          </h2>
+        <h2>
+          "Tech Extravaganza! Save 50% on All Gadgets with Free Express
+          Delivery!"
+          <Link to="/products" className="shopnow">
+            ShopNow
+          </Link>
+        </h2>
         )
       </div>
       <div className="part2">
@@ -59,18 +61,19 @@ function Navbar({
               <FaSearch className="search-icon" />
             </div>
           </div>
-          {isProductsPage ? (
-            <div className="navicons">
-              <span
-                onClick={() => {
-                  handleShow(true);
-                }}
-              >
-                <IoBagCheck className="navicon" />
-                {count}
-              </span>
-            </div>
-          ) : null}
+
+          <div className="navicons">
+            <Link to={`/cart`}
+            
+            >
+              <IoBagCheck className="navicon" />
+              {carts.length>0?carts.length:""}
+            </Link>
+            <Link to={`/wishlist`}>
+              <FaHeart className="navicon" />
+              {favorites?.length>0?favorites.length:""}
+            </Link>
+          </div>
         </div>
       </div>
       <hr />

@@ -506,7 +506,7 @@ const Productdata = [
     reviews: "(153 reviews)",
   },
   {
-    id: 41,
+    id: 43,
     title: "PORSCHE",
     model: "PORSCHE ",
     price: "529.99",
@@ -517,7 +517,7 @@ const Productdata = [
     reviews: "(91 reviews)",
   },
   {
-    id: 42,
+    id: 44,
     title: "PORSCHE",
     model: "PORSCHE",
     price: "149.99",
@@ -528,7 +528,7 @@ const Productdata = [
     reviews: "(329reviews)",
   },
   {
-    id: 43,
+    id: 45,
     title: "ASUS",
     model: "PORSCHE",
     price: "89.99",
@@ -539,7 +539,7 @@ const Productdata = [
     reviews: "(210 reviews)",
   },
   {
-    id: 43,
+    id: 46,
     title: "Samsung",
     model: "Samsung",
     price: "149.99",

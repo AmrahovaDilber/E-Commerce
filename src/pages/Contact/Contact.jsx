@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Contact/Contact.css";
 import { FaPhoneAlt } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
-import { useState } from "react";
+import "./Contact.css";
+
 export default function Contact() {
   const [user, setUser] = useState({
     Name: "",
@@ -12,24 +12,35 @@ export default function Contact() {
     Subject: "",
     Message: "",
   });
-  let name, value;
+
+  // State variables to track empty fields
+  const [emptyFields, setEmptyFields] = useState({
+    Name: false,
+    Email: false,
+    Subject: false,
+    Message: false,
+  });
+
   const data = (e) => {
-    name = e.target.name;
-    value = e.target.value;
+    const { name, value } = e.target;
     setUser({ ...user, [name]: value });
+
+    // Update emptyFields state based on input value
+    setEmptyFields({ ...emptyFields, [name]: value.trim() === "" });
   };
+
   const sendContactData = async (e) => {
     e.preventDefault();
     const { Name, Email, Subject, Message } = user;
     // Basic form validation
-    if (!user.Name || !user.Email || !user.Message) {
+    if (!Name || !Email || !Message) {
       alert("Please fill in all required fields");
       return;
     }
 
     // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(user.Email)) {
+    if (!emailRegex.test(Email)) {
       alert("Please enter a valid email address");
       return;
     }
@@ -107,34 +118,49 @@ export default function Contact() {
               value={user.Name}
               placeholder="Your Name"
               onChange={data}
+              className={emptyFields.Name ? "emptyField" : ""}
             ></input>
+            {emptyFields.Name && (
+              <p className="errorMessage">Name is required</p>
+            )}
             <input
               type="email"
               name="Email"
               value={user.Email}
               placeholder="Your Email"
               onChange={data}
+              className={emptyFields.Email ? "emptyField" : ""}
             ></input>
+            {emptyFields.Email && (
+              <p className="errorMessage">Email is required</p>
+            )}
             <input
-              type="number"
+              type="text"
               name="Subject"
               value={user.Subject}
               placeholder="Your Phone"
               onChange={data}
+              className={emptyFields.Subject ? "emptyField" : ""}
             ></input>
+            {emptyFields.Subject && (
+              <p className="errorMessage">Phone is required</p>
+            )}
           </div>
           <input
             type="text"
-            className="righttext"
+            className={`righttext ${emptyFields.Message ? "emptyField" : ""}`}
             placeholder="Your message"
             value={user.Message}
             name="Message"
             onChange={data}
           ></input>
+          {emptyFields.Message && (
+            <p className="errorMessage">Message is required</p>
+          )}
           <button onClick={sendContactData}>Send Message</button>
         </form>
       </div>
-      <Footer></Footer>
+
     </>
   );
 }
